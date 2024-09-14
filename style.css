@@ -25,7 +25,7 @@ body.dark-mode {
   justify-content: center;
   gap: 20px;
   margin: 60px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .rainbow-divider {
   width: 100%;
@@ -49,7 +49,7 @@ body.dark-mode {
   position: absolute;
   top: 50%;
   left: 0;
-  z-index: 0; /* Rainbow will be behind */
+  z-index: 0;
 }
 .hero_links span {
   border: 1px solid;
@@ -116,11 +116,6 @@ body.dark-mode {
   .hero_links {
     gap: 10px;
     margin: 30px;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .rainbow-divider {
     height: 15px;
@@ -140,7 +135,7 @@ body.dark-mode {
   .hero_links {
     gap: 5px;
     margin: 20px;
-    width: 100%;
+    display: flex;
   }
   .rainbow-divider {
     height: 10px;
