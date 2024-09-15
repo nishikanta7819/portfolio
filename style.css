@@ -548,6 +548,9 @@ body.dark-mode {
   border-radius: 50px;
   cursor: pointer;
 }
+.footer_buttons span img {
+  height: 30px;
+}
 .footer_content {
   font-size: 80px;
   font-weight: 800;
@@ -579,6 +582,7 @@ body.dark-mode {
     padding: 8px;
     font-size: 14px;
   }
+
   .footer_content {
     font-size: 60px;
   }
@@ -612,6 +616,9 @@ body.dark-mode {
   .footer_buttons {
     align-items: center;
     gap: 10px;
+  }
+  .footer_buttons span img {
+    height: 15px;
   }
   .footer_buttons span {
     padding: 5px;
