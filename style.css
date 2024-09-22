@@ -193,6 +193,9 @@ body.dark-mode {
 .key:nth-child(8) {
   animation: pressDown8 3.2s infinite;
 }
+.key:nth-child(9) {
+  animation: pressDown9 3.2s infinite;
+}
 
 #hero_intro {
   display: flex;
@@ -267,6 +270,7 @@ body.dark-mode {
   }
   .rainbow-divider {
     height: 10px;
+    display: none;
   }
   .hero_section {
     margin-bottom: 100px;
