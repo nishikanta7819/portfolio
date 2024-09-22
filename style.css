@@ -194,40 +194,6 @@ body.dark-mode {
   animation: pressDown8 3.2s infinite;
 }
 
-/* extra stuff .jux-linx {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 10px;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-a {
-  text-decoration: none;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: white;
-  background-color: black;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
-  padding: 5px 10px;
-  transition: 0.1s all ease-in;
-}
-
-a:nth-child(1):hover {
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 2px 0 #349eff;
-}
-
-a:nth-child(2):hover {
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 2px 0 #ff5757;
-} */
-
 #hero_intro {
   display: flex;
   justify-content: center;
@@ -294,10 +260,13 @@ a:nth-child(2):hover {
     gap: 5px;
     margin: 20px;
     display: flex;
+    font-size: 7px;
+  }
+  .hero_links span {
+    padding: 5px;
   }
   .rainbow-divider {
     height: 10px;
-    display: none;
   }
   .hero_section {
     margin-bottom: 100px;
