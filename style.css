@@ -283,7 +283,7 @@ a:nth-child(2):hover {
 /* Responsive Design for Small Mobile Devices */
 @media (max-width: 480px) {
   .hero_intro p {
-    font-size: 60px;
+    font-size: 70px;
   }
   #hero_intro span {
     font-size: 8px;
@@ -297,6 +297,7 @@ a:nth-child(2):hover {
   }
   .rainbow-divider {
     height: 10px;
+    display: none;
   }
   .hero_section {
     margin-bottom: 100px;
