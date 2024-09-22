@@ -161,6 +161,16 @@ body.dark-mode {
     transform: translateY(10px);
   }
 }
+@keyframes pressDown9 {
+  35%,
+  45%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+}
 
 .key:nth-child(1) {
   animation: pressDown1 2s infinite;
