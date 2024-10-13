@@ -671,27 +671,7 @@ body.dark-mode {
 .footer_bar {
   padding: 50px;
   margin: 50px;
-  border: 1px solid;
-  border-radius: 20px;
   margin-bottom: 200px;
-}
-.footer_buttons {
-  display: flex;
-  justify-content: right;
-  gap: 20px;
-}
-.footer_buttons span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  border: 1px solid;
-  padding: 10px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.footer_buttons span img {
-  height: 30px;
 }
 .footer_content {
   font-size: 80px;
@@ -717,14 +697,6 @@ body.dark-mode {
     padding: 30px;
     margin: 30px;
   }
-  .footer_buttons {
-    justify-content: center;
-  }
-  .footer_buttons span {
-    padding: 8px;
-    font-size: 14px;
-  }
-
   .footer_content {
     font-size: 60px;
   }
@@ -736,14 +708,6 @@ body.dark-mode {
     padding: 20px;
     margin: 20px;
   }
-  .footer_buttons {
-    align-items: center;
-    gap: 15px;
-  }
-  .footer_buttons span {
-    padding: 8px;
-    font-size: 12px;
-  }
   .footer_content {
     font-size: 50px;
   }
@@ -754,18 +718,6 @@ body.dark-mode {
   .footer_bar {
     padding: 30px;
     margin: 15px;
-  }
-  .footer_buttons {
-    align-items: center;
-    gap: 10px;
-  }
-  .footer_buttons span img {
-    height: 15px;
-  }
-  .footer_buttons span {
-    padding: 5px;
-    font-size: 10px;
-    height: 30px;
   }
   .footer_content {
     font-size: 40px;

@@ -37,30 +37,3 @@ scrollButtons.forEach((button) => {
     }
   });
 });
-
-// Like and unlike button
-function handleLike() {
-  const likeButton = document.getElementById("likeButton");
-  const unlikeButton = document.getElementById("unlikeButton");
-
-  // Check if it's already liked
-  if (likeButton.textContent === "Like") {
-    likeButton.textContent = "Liked";
-    unlikeButton.textContent = "Unlike"; // Reset unlike if it was clicked
-  } else {
-    likeButton.textContent = "Like"; // Toggle back to default
-  }
-}
-
-function handleUnlike() {
-  const likeButton = document.getElementById("likeButton");
-  const unlikeButton = document.getElementById("unlikeButton");
-
-  // Check if it's already unliked
-  if (unlikeButton.textContent === "Unlike") {
-    unlikeButton.textContent = "Unliked";
-    likeButton.textContent = "Like"; // Reset like if it was clicked
-  } else {
-    unlikeButton.textContent = "Unlike"; // Toggle back to default
-  }
-}
