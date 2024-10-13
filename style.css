@@ -141,12 +141,12 @@ body.dark-mode {
 }
 
 @keyframes pressDown7 {
-  10%,
-  20%,
+  30%,
+  40%,
   100% {
     transform: translateY(0);
   }
-  15% {
+  35% {
     transform: translateY(10px);
   }
 }
@@ -162,12 +162,12 @@ body.dark-mode {
   }
 }
 @keyframes pressDown9 {
-  35%,
-  45%,
+  30%,
+  40%,
   100% {
     transform: translateY(0);
   }
-  40% {
+  35% {
     transform: translateY(10px);
   }
 }
@@ -197,14 +197,14 @@ body.dark-mode {
 }
 
 .key:nth-child(7) {
-  animation: pressDown7 2.2s infinite;
+  animation: pressDown7 4s infinite;
 }
 
 .key:nth-child(8) {
-  animation: pressDown8 3.2s infinite;
+  animation: pressDown8 2.5s infinite;
 }
 .key:nth-child(9) {
-  animation: pressDown9 3.2s infinite;
+  animation: pressDown9 2s infinite;
 }
 
 #hero_intro {
