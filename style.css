@@ -762,6 +762,11 @@ body.dark-mode {
   transition: color 0.2s ease;
   position: relative;
 }
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
 .footer_content:hover {
   color: transparent;
   cursor: pointer;
@@ -781,6 +786,9 @@ body.dark-mode {
   .footer_content {
     font-size: 60px;
   }
+  .copyright {
+    font-size: 10px;
+  }
 }
 
 /* Responsive Design for Mobile Devices (max-width: 768px) */
@@ -795,6 +803,9 @@ body.dark-mode {
     align-items: center;
     font-size: 50px;
   }
+  .copyright {
+    font-size: 8px;
+  }
 }
 
 /* Responsive Design for Small Mobile Devices (max-width: 480px) */
@@ -808,5 +819,8 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .copyright {
+    font-size: 8px;
   }
 }
