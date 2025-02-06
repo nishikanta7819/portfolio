@@ -673,6 +673,80 @@ body.dark-mode {
   }
 }
 
+/* ------------Banner Page------------- */
+
+.banner-page {
+  height: 80vh;
+}
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.yellow-banner {
+  background-color: yellow;
+  transform: rotate(-10deg);
+  top: 40%;
+  color: black;
+}
+
+.green-banner {
+  background-color: green;
+  transform: rotate(10deg);
+  top: 50%;
+  color: white;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-page {
+    height: 600px;
+  }
+  .banner {
+    font-size: 20px;
+    padding: 8px 0;
+  }
+
+  .yellow-banner {
+    top: 45%;
+  }
+
+  .green-banner {
+    top: 55%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-page {
+    height: 60vh;
+  }
+  .banner {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  .yellow-banner {
+    top: 40%;
+    transform: rotate(-10deg);
+  }
+
+  .green-banner {
+    top: 45%;
+    transform: rotate(10deg);
+  }
+}
+
 /* Footer */
 
 .footer_bar {
