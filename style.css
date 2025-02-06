@@ -16,7 +16,7 @@ body.dark-mode {
   color: white;
 }
 .hero_section {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   position: relative;
 }
 .hero_links {
@@ -286,14 +286,14 @@ body.dark-mode {
     display: none;
   }
   .hero_section {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 }
 
 /* About */
 .about {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   flex-wrap: wrap;
 }
 .about_left {
@@ -394,7 +394,7 @@ body.dark-mode {
 
 /* Skills */
 .skills {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .skills_text p {
   display: flex;
@@ -476,7 +476,7 @@ body.dark-mode {
 
 /* Projects */
 .projects {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: 80px;
 }
 .projects_text p {
@@ -572,7 +572,7 @@ body.dark-mode {
 /* Contact */
 
 .contact_me {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .contact_text span {
   display: flex;
@@ -676,7 +676,7 @@ body.dark-mode {
 /* ------------Banner Page------------- */
 
 .banner-page {
-  height: 80vh;
+  height: 60vh;
 }
 .banner-container {
   position: relative;
@@ -711,7 +711,7 @@ body.dark-mode {
 /* Responsive Design */
 @media (max-width: 768px) {
   .banner-page {
-    height: 600px;
+    height: 40vh;
   }
   .banner {
     font-size: 20px;
@@ -729,7 +729,7 @@ body.dark-mode {
 
 @media (max-width: 480px) {
   .banner-page {
-    height: 60vh;
+    height: 40vh;
   }
   .banner {
     font-size: 16px;
