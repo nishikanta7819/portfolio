@@ -593,9 +593,16 @@ body.dark-mode {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 30px;
   flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.contact_links div {
+  width: calc(100% / 6 - 10px);
+  text-align: center;
+}
+.contact_links div:hover {
+  background-color: hsl(0, 0%, 90%);
 }
 .contact_link_container {
   display: flex;
@@ -668,6 +675,18 @@ body.dark-mode {
   }
   .contact_links {
     gap: 10px;
+  }
+  .contact_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  .contact_links div {
+    width: calc(80% / 3 - 10px);
+    text-align: center;
   }
 }
 
