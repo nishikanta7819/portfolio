@@ -53,7 +53,7 @@ body.dark-mode {
 .logo img {
   height: 30px;
 }
-.logo span{
+.logo span {
   font-size: 25px;
 }
 .theme {
@@ -330,7 +330,7 @@ body.dark-mode {
     font-size: 7px;
     display: flex;
     justify-content: space-between;
-    padding-left:20px ;
+    padding-left: 20px;
     padding-right: 20px;
   }
   .menus {
@@ -544,8 +544,8 @@ body.dark-mode {
 /* Projects */
 .projects {
   margin-bottom: 80px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .projects_text p {
   display: flex;
@@ -636,19 +636,17 @@ body.dark-mode {
 @media (max-width: 480px) {
   .projects {
     padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .projects_text p {
     font-size: 14px;
   }
-  .projects_cards_text p {
-    font-size: 18px;
-  }
-  .projects_cards_image img {
-    height: 35px;
-  }
   .projects_cards {
     gap: 5px;
-    padding: 15px;
+  }
+  .projects_cards span {
+    font-size: 15px;
   }
   .more-projects span {
     border: 1px solid gray;
