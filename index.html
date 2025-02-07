@@ -12,13 +12,29 @@
   </head>
   <body>
     <div class="main_page">
+      <div class="custom-cursor"></div>
       <div class="hero_section">
         <div class="hero_links">
-          <span class="scrollButton" data-target="about_page">About</span>
-          <span class="scrollButton" data-target="skills_page">Skills</span>
-          <span class="scrollButton" data-target="projects_page">Projects</span>
-          <span class="scrollButton" data-target="contact_page">Contact</span>
-          <span id="mode-toggle">Theme</span>
+          <div class="logo">
+            <img
+              src="https://framerusercontent.com/images/rM4IqXLIyui5bpaNPUAU13y4xo.png"
+              alt=""
+            />
+            <span>nishikanta.</span>
+          </div>
+          <div class="menus">
+            <span class="scrollButton" id="btn1" data-target="about_page"
+              >About</span
+            >
+            <span class="scrollButton" id="btn1" data-target="skills_page"
+              >Skills</span
+            >
+            <span class="scrollButton" id="btn1" data-target="projects_page"
+              >Projects</span
+            >
+            <span class="scrollButton" data-target="contact_page">Contact</span>
+          </div>
+          <div class="theme"><span id="mode-toggle"></span></div>
         </div>
         <div class="hero_intro">
           <div class="rainbow-divider"></div>
@@ -113,14 +129,19 @@
           <p>Projects</p>
         </div>
         <div class="projects_cards">
-          <div class="projects_cards_image">
-            <img src="./assets//envelope.png" alt="" />
-          </div>
-          <div class="projects_cards_text">
-            <p>Projects are going to be added soon!!</p>
-          </div>
+          <span>Shoppy</span>
+          <img src="./assets/right-up.png" alt="" />
+        </div>
+        <hr />
+        <div class="projects_cards">
+          <span>Foodie</span>
+          <img src="./assets/right-up.png" alt="" />
+        </div>
+        <div class="more-projects">
+          <span>More works</span>
         </div>
       </div>
+
       <div class="contact_me" id="contact_page">
         <div class="contact_text">
           <span>Contact me</span>
