@@ -51,7 +51,10 @@ body.dark-mode {
   gap: 5px;
 }
 .logo img {
-  height: 25px;
+  height: 30px;
+}
+.logo span{
+  font-size: 25px;
 }
 .theme {
   display: flex;
@@ -325,8 +328,26 @@ body.dark-mode {
     margin: 20px;
     display: flex;
     font-size: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding-left:20px ;
+    padding-right: 20px;
   }
   .menus {
+    display: none;
+    font-size: 10px;
+    margin: 10px;
+  }
+  .logo {
+    gap: 2px;
+  }
+  .logo span {
+    font-size: 12px;
+  }
+  .logo img {
+    height: 20px;
+  }
+  .theme span {
     font-size: 10px;
   }
   .rainbow-divider {
