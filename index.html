@@ -34,7 +34,14 @@
             >
             <span class="scrollButton" data-target="contact_page">Contact</span>
           </div>
-          <div class="theme"><span id="mode-toggle"></span></div>
+          <div class="day-night" onclick="toggleTheme()">
+            <div id="sun" class="sun">
+              <img src="./assets/sunny.png" alt="" />
+            </div>
+            <div id="moon" class="moon">
+              <img src="./assets/moon.png" alt="" />
+            </div>
+          </div>
         </div>
         <div class="hero_intro">
           <div class="rainbow-divider"></div>
@@ -54,6 +61,7 @@
           </div>
         </div>
       </div>
+
       <div class="about" id="about_page">
         <div class="about_left">
           <p>
@@ -77,50 +85,205 @@
           <p>Skills</p>
         </div>
         <div class="skills_logo">
-          <div class="skills_logo_container">
-            <img src="./assets/html.png" alt="" />
-            <p>HTML</p>
+          <div class="skills_logo_track">
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/html.png" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/css-3.png" alt="" />
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/js.png" alt="" />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/react.png" alt="" />
+                <p>React.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/express-js.png" alt="" />
+                <p>Express.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/mongodb.png" alt="" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/tailwind-css-icon.png" alt="" />
+                <p>Tailwind CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/github.png" alt="" />
+                <p>GitHub</p>
+              </div>
+            </div>
           </div>
-          <div class="skills_logo_container">
-            <img src="./assets/css-3.png" alt="" />
-            <p>CSS</p>
+          <div class="skills_logo_track">
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/html.png" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/css-3.png" alt="" />
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/js.png" alt="" />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/react.png" alt="" />
+                <p>React.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/express-js.png" alt="" />
+                <p>Express.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/mongodb.png" alt="" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/tailwind-css-icon.png" alt="" />
+                <p>Tailwind CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/github.png" alt="" />
+                <p>GitHub</p>
+              </div>
+            </div>
           </div>
-          <div class="skills_logo_container">
-            <img src="./assets/js.png" alt="" />
-            <p>JavaScript</p>
+          <div class="skills_logo_track">
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/html.png" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/css-3.png" alt="" />
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/js.png" alt="" />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/react.png" alt="" />
+                <p>React.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/express-js.png" alt="" />
+                <p>Express.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/mongodb.png" alt="" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/tailwind-css-icon.png" alt="" />
+                <p>Tailwind CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/github.png" alt="" />
+                <p>GitHub</p>
+              </div>
+            </div>
           </div>
-          <!-- <div class="skills_logo_container">
-            <img src="./assets//python.png" alt="" />
-            <p>Python</p>
-          </div>
-          <div class="skills_logo_container">
-            <img src="./assets/django.png" alt="" />
-            <p>Django</p>
-          </div> -->
-          <div class="skills_logo_container">
-            <img src="./assets/react.png" alt="" />
-            <p>React.js</p>
-          </div>
-          <div class="skills_logo_container">
-            <img src="./assets/express-js.png" alt="" />
-            <p>Express.js</p>
-          </div>
-          <div class="skills_logo_container">
-            <img src="./assets/mongodb.png" alt="" />
-            <p>MongoDB</p>
-          </div>
-
-          <div class="skills_logo_container">
-            <img src="./assets/tailwind-css-icon.png" alt="" />
-            <p>Tailwind css</p>
-          </div>
-          <div class="skills_logo_container">
-            <img src="./assets/bootstrap-5-logo-icon.png" alt="" />
-            <p>Bootstrap</p>
-          </div>
-          <div class="skills_logo_container">
-            <img src="./assets/github.png" alt="" />
-            <p>GitHub</p>
+          <div class="skills_logo_track">
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/html.png" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/css-3.png" alt="" />
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/js.png" alt="" />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/react.png" alt="" />
+                <p>React.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/express-js.png" alt="" />
+                <p>Express.js</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/mongodb.png" alt="" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/tailwind-css-icon.png" alt="" />
+                <p>Tailwind CSS</p>
+              </div>
+            </div>
+            <div class="skills_logo_container">
+              <div class="skills_logo_container_inside">
+                <img src="./assets/github.png" alt="" />
+                <p>GitHub</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -128,6 +291,14 @@
         <div class="projects_text">
           <p>Projects</p>
         </div>
+
+        <div class="projects-display">
+          <div class="projects-display-left">
+            <img src="./assets/filter.png" alt="" />
+            <span>All works (5)</span>
+          </div>
+        </div>
+
         <div class="projects_cards">
           <span>Shoppy</span>
           <img src="./assets/right-up.png" alt="" />
@@ -209,6 +380,17 @@
           </div>
         </div>
       </div>
+
+      <!-- <div class="animate-text-section">
+        <div class="marquee">
+          <div class="marquee-content">thank you for your visit</div>
+          <div class="marquee-content">thank you for your visit</div>
+          <div class="marquee-content">thank you for your visit</div>
+          <div class="marquee-content">thank you for your visit</div>
+          <div class="marquee-content">thank you for your visit</div>
+        </div>
+      </div> -->
+
       <div class="banner-page">
         <div class="banner-container">
           <div class="banner yellow-banner">
