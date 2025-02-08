@@ -40,6 +40,19 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+/* .hero_links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+} */
+/* .hero_intro {
+  margin-top: 100px;
+} */
+
 .logo {
   display: flex;
   justify-content: center;
@@ -307,6 +320,14 @@ body {
 .hero_intro span:hover {
   transform: scale(1.1);
 }
+.scroll-to-explore {
+  display: flex;
+  padding-left: 100px;
+  gap: 20px;
+}
+.scroll-to-explore-image img {
+  height: 20px;
+}
 
 /* Responsive Design for laptops */
 @media (max-width: 1024px) {
@@ -374,6 +395,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .menus {
     display: none;
     font-size: 10px;
@@ -393,6 +415,9 @@ body {
   }
   .rainbow-divider {
     height: 10px;
+    display: none;
+  }
+  .scroll-to-explore {
     display: none;
   }
 }
@@ -875,7 +900,7 @@ body {
 
 /* Responsive Design for Small Mobile Devices */
 @media (max-width: 480px) {
-  .contact_me{
+  .contact_me {
     margin-bottom: 20px;
   }
   .contact_text span {
@@ -1036,13 +1061,69 @@ body {
   }
 }
 
+/* -----------back-to-top------------- */
+.back-to-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 80px;
+  margin-bottom: 0px;
+}
+.back-to-top-image {
+  align-items: center;
+}
+.back-to-top-image img {
+  margin-top: 5px;
+  height: 25px;
+}
+.back-to-top-text {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .back-to-top {
+    display: none;
+  }
+}
+
 /* ----------------------------------------Footer---------------------------------- */
 
 .footer_bar {
   padding: 50px;
-  margin: 50px;
   margin-bottom: 200px;
 }
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Blinking green dot with shadow */
+.blinking-circle {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  animation: blink-shadow 0.8s infinite alternate ease-in-out;
+}
+/* Blinking Shadow Animation */
+
+@keyframes blink-shadow {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 10px hsla(120, 100%, 50%, 0.7);
+  }
+  100% {
+    box-shadow: 0 1 65px hsl(120, 100%, 70%);
+  }
+}
+
 .footer_content {
   font-size: 80px;
   font-weight: 800;
@@ -1098,6 +1179,9 @@ body {
 
 /* Responsive Design for Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
+  .status {
+    font-size: 10px;
+  }
   .footer_bar {
     padding: 30px;
     margin: 15px;

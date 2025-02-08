@@ -13,7 +13,7 @@
   <body>
     <div class="main_page">
       <div class="custom-cursor"></div>
-      <div class="hero_section">
+      <div class="hero_section" id="navbar">
         <div class="hero_links">
           <div class="logo">
             <img
@@ -58,6 +58,12 @@
           </div>
           <div id="hero_intro">
             <span onclick="window.open('./assets/resume.pdf')">Resume</span>
+          </div>
+        </div>
+        <div class="scroll-to-explore">
+          <div class="scroll-to-explore-image"><img src="./assets/arrow-down.png" alt="" /></div>
+          <div class="scroll-to-explore-text">
+            <span>Scroll to Explore</span>
           </div>
         </div>
       </div>
@@ -405,7 +411,29 @@
           </div>
         </div>
       </div>
+      <div class="back-to-top">
+        <div class="back-to-top-image">
+          <img
+            src="./assets/arrowhead-up.png"
+            alt=""
+            class="scrollButton"
+            id="btn1"
+            data-target="navbar"
+          />
+        </div>
+        <div class="back-to-top-text">
+          <span class="scrollButton" id="btn1" data-target="navbar"
+            >Back top</span
+          >
+        </div>
+      </div>
       <div class="footer_bar">
+        <div class="status">
+          <span class="blinking-circle">
+            <span class="circle"></span>
+          </span>
+          <span class="status-text">Open to work</span>
+        </div>
         <div class="footer_content">
           <p>Nishikanta</p>
         </div>
