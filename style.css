@@ -923,11 +923,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     padding: 20px;
   }
   .contact_links div {
-    width: calc(80% / 3 - 10px);
+    width: calc(80% / 2 - 10px);
     text-align: center;
   }
 }
