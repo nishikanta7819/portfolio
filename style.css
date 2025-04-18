@@ -660,7 +660,7 @@ body {
 
 /* ---------------------------------------Projects------------------------------------- */
 .projects {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   padding-left: 200px;
   padding-right: 200px;
 }
@@ -809,7 +809,7 @@ body {
 /* --------------------------------------Contact-------------------------------------- */
 
 .contact_me {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 .contact_text span {
   display: flex;
