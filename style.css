@@ -780,7 +780,7 @@ body {
     margin-bottom: 50px;
   }
   .projects_text p {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   .projects-display-left {
@@ -796,7 +796,7 @@ body {
     gap: 5px;
   }
   .projects_cards span {
-    font-size: 20px;
+    font-size: 15px;
   }
   .more-projects span {
     border: 1px solid gray;

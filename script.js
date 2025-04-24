@@ -29,9 +29,6 @@ document.addEventListener("mousemove", (e) => {
   cursor.style.top = `${e.clientY}px`;
 });
 
-
-
-
 // Light mode/Dark mode-----------
 function toggleTheme() {
   let body = document.body;
@@ -68,3 +65,6 @@ window.onload = function () {
     moon.style.opacity = "0";
   }
 };
+
+// Frontend Projects
+

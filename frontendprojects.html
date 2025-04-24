@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilted Div Stack</title>
+    <link rel="stylesheet" href="frontendprojects.css" />
+  </head>
+  <body>
+    <div class="frontend-projects-cards" id="stack">
+      <div class="project-card">
+        <img
+          src="https://veirdo.in/cdn/shop/files/veirdo_logo_1.svg?v=1704692356&width=180"
+          alt=""
+        />
+        <div class="project-card-bottom">
+          <p>Veirdo</p>
+          <button>view</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          src="https://veirdo.in/cdn/shop/files/veirdo_logo_1.svg?v=1704692356&width=180"
+          alt=""
+        />
+        <div class="project-card-bottom">
+          <p>Veirdo</p>
+          <button>view</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          src="https://veirdo.in/cdn/shop/files/veirdo_logo_1.svg?v=1704692356&width=180"
+          alt=""
+        />
+        <div class="project-card-bottom">
+          <p>Veirdo</p>
+          <button>view</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          src="https://veirdo.in/cdn/shop/files/veirdo_logo_1.svg?v=1704692356&width=180"
+          alt=""
+        />
+        <div class="project-card-bottom">
+          <p>Veirdo</p>
+          <button>view</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          src="https://veirdo.in/cdn/shop/files/veirdo_logo_1.svg?v=1704692356&width=180"
+          alt=""
+        />
+        <div class="project-card-bottom">
+          <p>Veirdo</p>
+          <button>view</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="prev-btn" onclick="prevSlide()">Previous</button>
+      <button class="nxt-btn" onclick="nextSlide()">Next</button>
+    </div>
+    <script>
+      const slides = document.querySelectorAll(".project-card");
+      let current = 0;
+
+      function updateSlides() {
+        slides.forEach((slide, i) => {
+          const offset = i - current;
+
+          if (offset < 0) {
+            slide.style.opacity = "0";
+            slide.style.pointerEvents = "none";
+          } else {
+            slide.style.opacity = "1";
+            slide.style.pointerEvents = offset === 0 ? "auto" : "none";
+            slide.style.transform = `translateY(${offset * 10}px) rotate(${
+              offset * 2
+            }deg) scale(${1 - offset * 0.02})`;
+            slide.style.zIndex = 100 - offset;
+          }
+        });
+      }
+
+      function nextSlide() {
+        if (current < slides.length - 1) {
+          current++;
+          updateSlides();
+        }
+      }
+
+      function prevSlide() {
+        if (current > 0) {
+          current--;
+          updateSlides();
+        }
+      }
+
+      updateSlides(); // initialize on load
+    </script>
+  </body>
+</html>
