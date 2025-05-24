@@ -40,19 +40,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
-/* .hero_links {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 20px;
-  z-index: 1000;
-} */
-/* .hero_intro {
-  margin-top: 100px;
-} */
-
 .logo {
   display: flex;
   justify-content: center;
@@ -61,7 +48,7 @@ body {
   transition: all 0.3s ease;
 }
 .logo:hover {
-  transform: scale(0.1);
+  transform: scale(1.1);
 }
 .logo img {
   height: 30px;
@@ -943,48 +930,6 @@ body {
   }
 }
 
-/* ---------animate-text-section---------- 
-.marquee {
-  width: 100%;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  display: flex;
-}
-
-.marquee-content {
-  display: inline-block;
-  white-space: nowrap;
-  padding-right: 10px;
-  font-size: 25px;
-  animation: marqueeAnimation 5s linear infinite;
-}
-
-@keyframes marqueeAnimation {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.marquee-content:nth-child(2) {
-  animation: marqueeAnimation 5s linear infinite;
-}
-.marquee-content:nth-child(3) {
-  animation: marqueeAnimation 5s linear infinite;
-}
-.marquee-content:nth-child(4) {
-  animation: marqueeAnimation 5s linear infinite;
-}
-@media (max-width: 480px) {
-  .marquee-content {
-    font-size: 15px;
-  }
-}
-*/
 /*------------------------------Banner Page------------------------------ */
 
 .banner-page {
