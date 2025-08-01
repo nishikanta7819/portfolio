@@ -477,6 +477,9 @@ body {
 
 /* Responsive Design for Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
+  .about_left{
+    display: none;
+  }
   .about_left p {
     font-size: 35px;
   }
