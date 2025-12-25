@@ -911,8 +911,12 @@ body {
     padding: 15px;
   }
 
+  .more-projects {
+    margin-top: 10px;
+  }
+
   #toggleProjects:checked+.third-project {
-    padding: 10px;
+    padding: 15px;
   }
 }
 
@@ -958,7 +962,7 @@ body {
   }
 
   #toggleProjects:checked+.third-project {
-    padding: 10px;
+    padding: 15px;
   }
 }
 
