@@ -912,7 +912,7 @@ body {
   }
 
   #toggleProjects:checked+.third-project {
-    padding: 0px;
+    padding: 10px;
   }
 }
 
@@ -958,7 +958,7 @@ body {
   }
 
   #toggleProjects:checked+.third-project {
-    padding: 0px;
+    padding: 10px;
   }
 }
 
