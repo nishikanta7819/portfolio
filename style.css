@@ -911,9 +911,9 @@ body {
     padding: 15px;
   }
 
-  /* #toggleProjects:checked+.third-project {
+  #toggleProjects:checked+.third-project {
     padding: 10px;
-  } */
+  }
 }
 
 /* Responsive Design for Small Mobile Devices (max-width: 480px) */
@@ -957,9 +957,9 @@ body {
     font-size: 10px;
   }
 
-  /* #toggleProjects:checked+.third-project {
+  #toggleProjects:checked+.third-project {
     padding: 10px;
-  } */
+  }
 }
 
 /* --------------------------------------Contact-------------------------------------- */
