@@ -228,6 +228,7 @@
           </div>
         </div>
       </div>
+      <!------------------------------Projects---------------------------------->
       <div class="projects" id="projects_page">
         <div class="projects_text">
           <p>Projects</p>
@@ -256,6 +257,18 @@
           />
         </div>
         <hr />
+        <input type="checkbox" id="toggleProjects" hidden />
+        <div class="projects_cards third-project">
+          <span
+            onclick="window.location.href='https://nishikantacrocs.netlify.app/'"
+            >Crocs</span
+          >
+          <img
+            src="./assets/right-up.png"
+            alt=""
+            onclick="window.location.href='https://nishikantacrocs.netlify.app/'"
+          />
+        </div>
         <!-- <div class="projects_cards">
           <span
             onclick="window.location.href='https://thesouledstore-nishikanta7819s-projects.vercel.app/'"
@@ -268,17 +281,6 @@
           />
         </div>
         <hr /> -->
-        <div class="projects_cards">
-          <span
-            onclick="window.location.href='https://nishikantacrocs.netlify.app/'"
-            >Crocs</span
-          >
-          <img
-            src="./assets/right-up.png"
-            alt=""
-            onclick="window.location.href='https://nishikantacrocs.netlify.app/'"
-          />
-        </div>
         <!-- <hr />
         <div class="projects_cards">
           <span
@@ -292,7 +294,9 @@
           />
         </div> -->
         <div class="more-projects">
-          <span id="showMoreBtn">More works</span>
+          <label for="toggleProjects">
+            <span id="showMoreBtn"></span>
+          </label>
         </div>
       </div>
 
