@@ -9,6 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NRMT56KDJH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NRMT56KDJH");
+    </script>
   </head>
   <body>
     <div class="main_page">
@@ -247,13 +261,13 @@
         </div>
         <div class="projects_cards">
           <span
-            onclick="window.location.href='https://nishikantaveirdo.netlify.app/'"
+            onclick="window.location.href='https://veirdoapp.netlify.app/'"
             >Veirdo</span
           >
           <img
             src="./assets/right-up.png"
             alt=""
-            onclick="window.location.href='https://nishikantaveirdo.netlify.app/'"
+            onclick="window.location.href='https://veirdoapp.netlify.app/'"
           />
         </div>
         <hr />
@@ -379,6 +393,7 @@
         <div class="copyright">
           <p>Copyright &copy; <span id="year"></span> All rights reserved</p>
         </div>
+        <div class="visitor"></div>
       </div>
     </div>
     <script src="script.js"></script>
