@@ -593,16 +593,19 @@ body {
 
 /* ---------------------------------------Skills------------------------------------ */
 .skills {
-  margin-bottom: 80px;
+  margin: 80px 0;
 }
 
+/* ===== TITLE ===== */
 .skills_text p {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
+  text-align: center;
+  font-size: 24px;
   position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
+/* Hover text effect */
 .skills_text p:hover {
   color: transparent;
 }
@@ -610,66 +613,83 @@ body {
 .skills_text p:hover::after {
   content: "Explore my Skills";
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: gray;
 }
 
-/* Scrolling */
-
-/* Wrapper for overflow control */
+/* ===== SCROLLING ===== */
 .skills_logo {
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 30px 0;
 }
 
-/* Scrolling container */
+/* Track */
 .skills_logo_track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  /* width: max-content; */
-  animation: scrollSkills 10s linear infinite;
+  gap: 80px;
+  width: max-content;
+  animation: scrollSkills 20s linear infinite;
 }
 
-/* Image styling */
+/* Skill card */
+.skills_logo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Images */
 .skills_logo_container img {
   height: 50px;
+  transition: 0.3s ease;
 }
 
-/* Text styling */
+/* Text */
 .skills_logo_container p {
-  font-size: 16px;
   margin-top: 8px;
-  display: none;
+  font-size: 14px;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-/* Infinite scrolling animation */
+/* Hover effects */
+.skills_logo_container:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.skills_logo_container:hover p {
+  opacity: 1;
+}
+
+/* Animation */
 @keyframes scrollSkills {
-  from {
-    transform: translateX(0%);
+  0% {
+    transform: translateX(0);
   }
 
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
   }
 }
 
+/* Pause on hover */
 .skills_logo:hover .skills_logo_track {
   animation-play-state: paused;
 }
 
-/*  */
-.skills_logo {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  padding: 40px;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .skills_logo_track {
+    gap: 40px;
+    animation: scrollSkills 25s linear infinite;
+  }
+
+  .skills_logo_container img {
+    height: 40px;
+  }
 }
 
 /* Responsive Design for Tablets (max-width: 1024px) */
