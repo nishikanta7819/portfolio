@@ -766,33 +766,17 @@ body {
   color: gray;
 }
 
-.projects-display {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.projects-display-left {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  border-radius: 30px;
-  padding: 10px;
-  border: 1px solid gray;
-  width: 20%;
-}
-
-.projects-display-left img {
-  height: 20px;
-}
-
-.projects_cards {
+/* Project cards */
+.projects_cards a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
   padding: 30px;
   flex-wrap: wrap;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid gray;
 }
 
 .projects_cards span {
@@ -808,6 +792,33 @@ body {
   transform: rotate(45deg);
 }
 
+/* ========================= */
+/* 🔥 HIDE / SHOW ANIMATION */
+/* ========================= */
+
+#hidden-project {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(20px);
+  transition:
+    max-height 0.6s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    padding 0.4s ease;
+}
+
+/* Show ALL hidden projects */
+#toggleProjects:checked~#hidden-project {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================= */
+/* 🔘 SHOW MORE BUTTON */
+/* ========================= */
+
 .more-projects {
   display: flex;
   justify-content: center;
@@ -819,7 +830,6 @@ body {
   border: 1px solid gray;
   font-size: 20px;
   transition: all 0.3s ease;
-  border: 1px solid gray;
   padding: 20px;
   border-radius: 50px;
 }
@@ -830,26 +840,7 @@ body {
   transform: scale(1.1);
 }
 
-.third-project {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0 30px;
-  transform: translateY(20px);
-  transition:
-    max-height 0.6s ease,
-    opacity 0.4s ease,
-    transform 0.4s ease,
-    padding 0.4s ease;
-}
-
-#toggleProjects:checked+.third-project {
-  max-height: 200px;
-  opacity: 1;
-  transform: translateY(0);
-  padding: 30px;
-}
-
+/* Toggle text */
 .more-projects span::after {
   content: "More works";
 }
@@ -858,35 +849,20 @@ body {
   content: "Show less";
 }
 
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
 
-
-
-
-/* Responsive Design for Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .projects {
     padding: 60px;
   }
 
-  .projects_cards {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .projects_text p {
     font-size: 18px;
   }
-
-  .projects_cards_text p {
-    font-size: 22px;
-  }
-
-  .projects_cards_image img {
-    height: 45px;
-  }
 }
 
-/* Responsive Design for Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
   .projects {
     padding: 40px;
@@ -905,9 +881,6 @@ body {
   }
 
   .projects_cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
     padding: 15px;
   }
 
@@ -915,17 +888,14 @@ body {
     margin-top: 10px;
   }
 
-  #toggleProjects:checked+.third-project {
+  #toggleProjects:checked~.hidden-project {
     padding: 15px;
   }
 }
 
-/* Responsive Design for Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .projects {
-    padding: 30px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 30px 45px;
     margin-bottom: 50px;
   }
 
@@ -933,36 +903,14 @@ body {
     font-size: 14px;
   }
 
-  .projects-display-left {
-    font-size: 10px;
-    width: 40%;
-    padding: 5px;
-    margin-bottom: 20px;
-  }
-
-  .projects-display-left img {
-    height: 15px;
-  }
-
-  .projects_cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-  }
-
   .projects_cards span {
     font-size: 15px;
   }
 
   .more-projects span {
-    border: 1px solid gray;
     padding: 10px;
     border-radius: 35px;
     font-size: 10px;
-  }
-
-  #toggleProjects:checked+.third-project {
-    padding: 15px;
   }
 }
 

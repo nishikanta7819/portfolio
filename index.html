@@ -1,413 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nishikanta's portfolio website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-NRMT56KDJH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-NRMT56KDJH");
-    </script>
-  </head>
-  <body>
-    <div class="main_page">
-      <div class="custom-cursor"></div>
-      <div class="hero_section" id="navbar">
-        <div class="hero_links">
-          <div class="logo">
-            <img
-              src="https://framerusercontent.com/images/rM4IqXLIyui5bpaNPUAU13y4xo.png"
-              alt=""
-            />
-            <span>nishikanta.</span>
-          </div>
-          <div class="menus">
-            <span class="scrollButton" id="btn1" data-target="about_page"
-              >About</span
-            >
-            <span class="scrollButton" id="btn1" data-target="skills_page"
-              >Skills</span
-            >
-            <span class="scrollButton" id="btn1" data-target="projects_page"
-              >Projects</span
-            >
-            <span class="scrollButton" data-target="contact_page">Contact</span>
-          </div>
-          <div class="day-night" onclick="toggleTheme()">
-            <div id="sun" class="sun">
-              <img src="./assets/sunny.png" alt="" />
-            </div>
-            <div id="moon" class="moon">
-              <img src="./assets/moon.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="hero_intro">
-          <div class="rainbow-divider"></div>
-          <div class="heading_text">
-            <p class="key">P</p>
-            <p class="key">O</p>
-            <p class="key">R</p>
-            <p class="key">T</p>
-            <p class="key">F</p>
-            <p class="key">O</p>
-            <p class="key">L</p>
-            <p class="key">I</p>
-            <p class="key">O</p>
-          </div>
-          <div id="hero_intro">
-            <span onclick="window.open('./assets/resume.pdf')">Resume</span>
-          </div>
-        </div>
-        <div class="scroll-to-explore">
-          <div class="scroll-to-explore-image">
-            <img src="./assets/arrow-down.png" alt="" />
-          </div>
-          <div class="scroll-to-explore-text">
-            <span>Scroll to Explore</span>
-          </div>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nishikanta's portfolio website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRMT56KDJH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-      <div class="about" id="about_page">
-        <div class="about_left">
-          <p>
-            Let me<br /><span>Introduce</span> <br />
-            Myself
-          </p>
-        </div>
-        <div class="about_right">
-          <h1>Hello,</h1>
-          <article>
-            I am Nishikanta, creative and detailed-oriented front-end developer
-            passionate about building responsive,user-friendly websites with a
-            focus on design and performance, I enjoy using my creativity and
-            knowledge to create websites that not only look great but also work
-            seamlessly.
-          </article>
-        </div>
-      </div>
-      <div class="skills" id="skills_page">
-        <div class="skills_text">
-          <p>Skills</p>
-        </div>
-        <div class="skills_logo">
-          <div class="skills_logo_track">
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/html.png" alt="" />
-                <p>HTML</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/css-3.png" alt="" />
-                <p>CSS</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/js.png" alt="" />
-                <p>JavaScript</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/react.png" alt="" />
-                <p>React.js</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/express-js.png" alt="" />
-                <p>Express.js</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/mongodb.png" alt="" />
-                <p>MongoDB</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/tailwind-css-icon.png" alt="" />
-                <p>Tailwind CSS</p>
-              </div>
-            </div>
-          </div>
+    gtag("config", "G-NRMT56KDJH");
+  </script>
+</head>
 
-          <div class="skills_logo_track">
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/html.png" alt="" />
-                <p>HTML</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/css-3.png" alt="" />
-                <p>CSS</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/js.png" alt="" />
-                <p>JavaScript</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <p>React.js</p>
-                <a href="https://react.dev/"
-                  ><img src="./assets/react.png" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <a href="https://expressjs.com/">
-                  <img src="./assets/express-js.png" alt="" />
-                </a>
-                <p>Express.js</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <a href="https://www.mongodb.com/">
-                  <img src="./assets/mongodb.png" alt="" />
-                </a>
-                <p>MongoDB</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <a href="https://tailwindcss.com/">
-                  <img src="./assets/tailwind-css-icon.png" alt=""
-                /></a>
-                <p>Tailwind CSS</p>
-              </div>
-            </div>
+<body>
+  <div class="main_page">
+    <div class="custom-cursor"></div>
+    <div class="hero_section" id="navbar">
+      <div class="hero_links">
+        <div class="logo">
+          <img src="https://framerusercontent.com/images/rM4IqXLIyui5bpaNPUAU13y4xo.png" alt="" />
+          <span>nishikanta.</span>
+        </div>
+        <div class="menus">
+          <span class="scrollButton" id="btn1" data-target="about_page">About</span>
+          <span class="scrollButton" id="btn1" data-target="skills_page">Skills</span>
+          <span class="scrollButton" id="btn1" data-target="projects_page">Projects</span>
+          <span class="scrollButton" data-target="contact_page">Contact</span>
+        </div>
+        <div class="day-night" onclick="toggleTheme()">
+          <div id="sun" class="sun">
+            <img src="./assets/sunny.png" alt="" />
           </div>
-          <div class="skills_logo_track">
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <a href="https://html.com/">
-                  <img src="./assets/html.png" alt="" />
-                </a>
-                <p>HTML</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/css-3.png" alt="" />
-                <p>CSS</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <a href="https://www.javascript.com/">
-                  <img src="./assets/js.png" alt=""
-                /></a>
-                <p>JavaScript</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/react.png" alt="" />
-                <p>React.js</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/express-js.png" alt="" />
-                <p>Express.js</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/mongodb.png" alt="" />
-                <p>MongoDB</p>
-              </div>
-            </div>
-            <div class="skills_logo_container">
-              <div class="skills_logo_container_inside">
-                <img src="./assets/tailwind-css-icon.png" alt="" />
-                <p>Tailwind CSS</p>
-              </div>
-            </div>
+          <div id="moon" class="moon">
+            <img src="./assets/moon.png" alt="" />
           </div>
         </div>
       </div>
-      <!------------------------------Projects---------------------------------->
-      <div class="projects" id="projects_page">
-        <div class="projects_text">
-          <p>Projects</p>
+      <div class="hero_intro">
+        <div class="rainbow-divider"></div>
+        <div class="heading_text">
+          <p class="key">P</p>
+          <p class="key">O</p>
+          <p class="key">R</p>
+          <p class="key">T</p>
+          <p class="key">F</p>
+          <p class="key">O</p>
+          <p class="key">L</p>
+          <p class="key">I</p>
+          <p class="key">O</p>
         </div>
-        <div class="projects_cards">
-          <span
-            onclick="window.location.href='https://nishikantabewakoof.netlify.app/'"
-            >Bewakoof</span
-          >
-          <img
-            src="./assets/right-up.png"
-            alt=""
-            onclick="window.location.href='https://nishikantabewakoof.netlify.app/'"
-          />
-        </div>
-        <hr>
-        <div class="projects_cards">
-          <span
-            onclick="window.location.href='https://veirdoapp.netlify.app/'"
-            >Veirdo</span
-          >
-          <img
-            src="./assets/right-up.png"
-            alt=""
-            onclick="window.location.href='https://veirdoapp.netlify.app/'"
-          />
-        </div>
-        <hr />
-        <div class="projects_cards">
-          <span
-            onclick="window.location.href='https://caronrental.netlify.app/'"
-            >carRental</span
-          >
-          <img
-            src="./assets/right-up.png"
-            alt=""
-            onclick="window.location.href='https://caronRental.netlify.app/'"
-          />
-        </div>
-        <hr>
-        <input type="checkbox" id="toggleProjects" hidden />
-        <div class="projects_cards third-project">
-          <span
-            onclick="window.location.href='https://nishikantacrocs.netlify.app/'"
-            >Crocs</span
-          >
-          <img
-            src="./assets/right-up.png"
-            alt=""
-            onclick="window.location.href='https://nishikantacrocs.netlify.app/'"
-          />
-        </div>
-        <!-- <div class="projects_cards">
-          <span
-            onclick="window.location.href='https://thesouledstore-nishikanta7819s-projects.vercel.app/'"
-            >TheSouledStore</span
-          >
-          <img
-            src="./assets/right-up.png"
-            alt=""
-            onclick="window.location.href='https://thesouledstore-nishikanta7819s-projects.vercel.app/'"
-          />
-        </div>
-        <hr /> -->
-        <!-- <hr />
-        <div class="projects_cards">
-          <span
-            onclick="window.location.href='https://nike-three-liart.vercel.app/'"
-            >Nike</span
-          >
-          <img
-            src="./assets/right-up.png"
-            alt=""
-            onclick="window.location.href='https://nike-three-liart.vercel.app/'"
-          />
-        </div> -->
-        <div class="more-projects">
-          <label for="toggleProjects">
-            <span id="showMoreBtn"></span>
-          </label>
+        <div id="hero_intro">
+          <span onclick="window.open('./assets/resume.pdf')">Resume</span>
         </div>
       </div>
-
-      <div class="contact_me" id="contact_page">
-        <div class="contact_text">
-          <span>Contact me</span>
+      <div class="scroll-to-explore">
+        <div class="scroll-to-explore-image">
+          <img src="./assets/arrow-down.png" alt="" />
         </div>
-        <div class="contact_links">
-          <div class="contact_link_container">
-            <img src="./assets//github.png" alt="" />
-            <a href="https://www.github.com/nishikanta7819" target="_blank"
-              ><p>Github</p></a
-            >
-          </div>
-          <div class="contact_link_container">
-            <img src="./assets/gmail.png" alt="" />
-            <a
-              href="mailto:example@gmail.com"
-              onclick="if(window.innerWidth > 768){
-     window.open('https://mail.google.com/mail/?view=cm&fs=1&to=example@gmail.com');
-   }"
-            >
-              Gmail</a
-            >
-          </div>
-          <div class="contact_link_container">
-            <img src="./assets/linkedin.png" alt="" />
-            <a
-              href="https://www.linkedin.com/in/NISHIKANTA BEHERA/"
-              target="_blank"
-              ><p>LinkedIn</p></a
-            >
-          </div>
-          <div class="contact_link_container">
-            <img src="./assets//whatsapp.png" alt="" />
-            <a href="https://wa.me/6370567644" target="_blank"
-              ><p>Whatsapp</p></a
-            >
-          </div>
+        <div class="scroll-to-explore-text">
+          <span>Scroll to Explore</span>
         </div>
-      </div>
-      <div class="back-to-top">
-        <div class="back-to-top-image">
-          <img
-            src="./assets/arrowhead-up.png"
-            alt=""
-            class="scrollButton"
-            id="btn1"
-            data-target="navbar"
-          />
-        </div>
-        <div class="back-to-top-text">
-          <span class="scrollButton" id="btn1" data-target="navbar"
-            >Back top</span
-          >
-        </div>
-      </div>
-      <div class="footer_bar">
-        <div class="status">
-          <span class="blinking-circle">
-            <span class="circle"></span>
-          </span>
-          <span class="status-text">Open to work</span>
-        </div>
-        <div class="footer_content">
-          <p>Nishikanta</p>
-        </div>
-        <div class="copyright">
-          <p>Copyright &copy; <span id="year"></span> All rights reserved</p>
-        </div>
-        <div class="visitor"></div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <div class="about" id="about_page">
+      <div class="about_left">
+        <p>
+          Let me<br /><span>Introduce</span> <br />
+          Myself
+        </p>
+      </div>
+      <div class="about_right">
+        <h1>Hello,</h1>
+        <article>
+          I am Nishikanta, creative and detailed-oriented front-end developer
+          passionate about building responsive,user-friendly websites with a
+          focus on design and performance, I enjoy using my creativity and
+          knowledge to create websites that not only look great but also work
+          seamlessly.
+        </article>
+      </div>
+    </div>
+    <div class="skills" id="skills_page">
+      <div class="skills_text">
+        <p>Skills</p>
+      </div>
+      <div class="skills_logo">
+        <div class="skills_logo_track">
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/html.png" alt="" />
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/css-3.png" alt="" />
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/js.png" alt="" />
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/react.png" alt="" />
+              <p>React.js</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/express-js.png" alt="" />
+              <p>Express.js</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/mongodb.png" alt="" />
+              <p>MongoDB</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/tailwind-css-icon.png" alt="" />
+              <p>Tailwind CSS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills_logo_track">
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/html.png" alt="" />
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/css-3.png" alt="" />
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/js.png" alt="" />
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <p>React.js</p>
+              <a href="https://react.dev/"><img src="./assets/react.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <a href="https://expressjs.com/">
+                <img src="./assets/express-js.png" alt="" />
+              </a>
+              <p>Express.js</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <a href="https://www.mongodb.com/">
+                <img src="./assets/mongodb.png" alt="" />
+              </a>
+              <p>MongoDB</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <a href="https://tailwindcss.com/">
+                <img src="./assets/tailwind-css-icon.png" alt="" /></a>
+              <p>Tailwind CSS</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills_logo_track">
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <a href="https://html.com/">
+                <img src="./assets/html.png" alt="" />
+              </a>
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/css-3.png" alt="" />
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <a href="https://www.javascript.com/">
+                <img src="./assets/js.png" alt="" /></a>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/react.png" alt="" />
+              <p>React.js</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/express-js.png" alt="" />
+              <p>Express.js</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/mongodb.png" alt="" />
+              <p>MongoDB</p>
+            </div>
+          </div>
+          <div class="skills_logo_container">
+            <div class="skills_logo_container_inside">
+              <img src="./assets/tailwind-css-icon.png" alt="" />
+              <p>Tailwind CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------------Projects---------------------------------->
+    <div class="projects" id="projects_page">
+
+      <div class="projects_text">
+        <p>Projects</p>
+      </div>
+
+      <!-- Always visible projects -->
+      <div class="projects_cards">
+        <a href="https://caronrental.netlify.app/" target="_blank">
+          <span>Car Rental</span>
+          <img src="./assets/right-up.png" alt="Open project" />
+        </a>
+      </div>
+      <div class="projects_cards">
+        <a href="#" target="_blank">
+          <span>Football Fits</span>
+          <img src="./assets/right-up.png" alt="Open project" />
+        </a>
+      </div>
+
+      <input type="checkbox" id="toggleProjects" hidden />
+      <!-- Hidden projects -->
+      <div class="projects_cards" id="hidden-project">
+        <a href="https://nishikantabewakoof.netlify.app/" target="_blank">
+          <span>Bewakoof Clone</span>
+          <img src="./assets/right-up.png" alt="Open project" />
+        </a>
+      </div>
+      <div class="projects_cards" id="hidden-project">
+        <a href="https://veirdoapp.netlify.app/" target="_blank">
+          <span>Veirdo Clone</span>
+          <img src="./assets/right-up.png" alt="Open project" />
+        </a>
+      </div>
+      <div class="projects_cards" id="hidden-project">
+        <a href="https://nishikantacrocs.netlify.app/" target="_blank">
+          <span>Crocs Clone</span>
+          <img src="./assets/right-up.png" alt="Open project" />
+        </a>
+      </div>
+
+      <!-- Show More / Less Button -->
+      <div class="more-projects">
+        <label for="toggleProjects">
+          <span id="showMoreBtn"></span>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="contact_me" id="contact_page">
+      <div class="contact_text">
+        <span>Contact me</span>
+      </div>
+      <div class="contact_links">
+        <div class="contact_link_container">
+          <img src="./assets//github.png" alt="" />
+          <a href="https://www.github.com/nishikanta7819" target="_blank">
+            <p>Github</p>
+          </a>
+        </div>
+        <div class="contact_link_container">
+          <img src="./assets/gmail.png" alt="" />
+          <a href="mailto:example@gmail.com" onclick="if(window.innerWidth > 768){
+     window.open('https://mail.google.com/mail/?view=cm&fs=1&to=example@gmail.com');
+   }">
+            Gmail</a>
+        </div>
+        <div class="contact_link_container">
+          <img src="./assets/linkedin.png" alt="" />
+          <a href="https://www.linkedin.com/in/NISHIKANTA BEHERA/" target="_blank">
+            <p>LinkedIn</p>
+          </a>
+        </div>
+        <div class="contact_link_container">
+          <img src="./assets//whatsapp.png" alt="" />
+          <a href="https://wa.me/6370567644" target="_blank">
+            <p>Whatsapp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <div class="back-to-top-image">
+        <img src="./assets/arrowhead-up.png" alt="" class="scrollButton" id="btn1" data-target="navbar" />
+      </div>
+      <div class="back-to-top-text">
+        <span class="scrollButton" id="btn1" data-target="navbar">Back top</span>
+      </div>
+    </div>
+    <div class="footer_bar">
+      <div class="status">
+        <span class="blinking-circle">
+          <span class="circle"></span>
+        </span>
+        <span class="status-text">Open to work</span>
+      </div>
+      <div class="footer_content">
+        <p>Nishikanta</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; <span id="year"></span> All rights reserved</p>
+      </div>
+      <div class="visitor"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
